@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans';
+  font-size: large;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 50, 0.1), rgba(0, 0, 50, 0.1)),
+    url(ele.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  bottom: 350px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 45px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position: relative;
+}
+.form-box h2::after {
+  content: '';
+  width: 45px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-field {
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+/* the inpuu selected is the place you write so it can be transparent and padding to make it big and spacious */
+input {
+  width: 100%;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  padding: 18px 13px;
+}
+.input-field i {
+  margin-left: 15px;
+  color: #999;
+}
+/* form p {
+  text-align: left;
+  font-size: 13px;
+}
+form p a {
+  text-decoration: none;
+} */
+/* you cn also use the class name or form name  */
+.input-group p {
+  text-align: left;
+  font-size: 15px;
+}
+.input-group p a {
+  text-decoration: none;
+}
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button {
+  flex-basis: 48%;
+  background-color: #3c00a0;
+  color: #fff;
+  height: 41px;
+  /* padding: 12px; you can use padding as well instead of height*/
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+.input-group {
+  margin-bottom: 55px;
+  /* height: 280px; */
+}
+.btn-field button.disable {
+  background: #eaeaea;
+  color: #fff;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Login form</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    </style>
+    <script
+      src="https://kit.fontawesome.com/bf2dcb6287.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h2 id="title">sign up</h2>
+        <form>
+          <div class="input-group">
+            <div
+              class="input-field"
+              id="nameField"
+            >
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                placeholder="password"
+                required
+              />
+            </div>
+            <p>Lost password ? <a href="#">Click Here</a></p>
+          </div>
+          <div class="btn-field">
+            <button
+              type="button"
+              id="signup-btn"
+            >
+              Sign Up
+            </button>
+            <button
+              type="button"
+              class="disable"
+              id="signIn-btn"
+            >
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
